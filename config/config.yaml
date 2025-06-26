@@ -14,9 +14,9 @@ samples:
 
 reference_genome: "/mmfs1/gscratch/stergachislab/assemblies/DSA_COLO829BL_v3.0.0.fasta"
 
-signature_analysis:
-  contexts: ["SBS96", "DBS78", "ID83"]
-  method: "SigProfilerExtractor"
-  min_mutations: 50
+#signature_analysis:
+#  contexts: ["SBS96", "DBS78", "ID83"]
+#  method: "SigProfilerExtractor"
+#  min_mutations: 50
 
 output_dir: "results"
