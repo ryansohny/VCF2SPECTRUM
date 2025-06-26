@@ -1,5 +1,5 @@
 [project]
-authors = ["Mitchell R. Vollger <mrvollger@gmail.com>"]
+authors = ["Min-Hwan 'Sohny' Sohn <mhsohny@uw.edu>"]
 channels = ["conda-forge", "bioconda"]
 description = "Add a short description here"
 name = "SmkTemplate"
@@ -22,3 +22,11 @@ snakefmt = "*"
 ruff = "*"
 taplo = "*"
 snakemake-executor-plugin-slurm = "*"
+mutyper = "*"
+python = ">=3.10"
+pandas = "*"
+matplotlib = "*"
+seaborn = "*"
+sigprofilermatrixgenerator = "*"
+sigprofilerplotting = "*"
+sigprofilerassignment = "*"

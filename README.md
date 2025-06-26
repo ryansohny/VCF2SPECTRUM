@@ -1,4 +1,8 @@
-# \<your workflow name\>
+# Make Mutation Spectrum from VCF file (SNV/Indels)
+Currently support SBS96, DBS78 and ID83 signatures.
+> Note:
+> SBS96 is based on VCF obtained from diploid genome alignment.
+> If your VCF is generated using haploid genome (e.g., hg38/CHM13-T2T) alignment, this will undercount homozygous alt alleles.
 
 [![Actions Status](https://github.com/mrvollger/SmkTemplate/workflows/CI/badge.svg)](https://github.com/mrvollger/SmkTemplate/actions)
 
@@ -21,15 +25,5 @@ pixi install
 `pixi` handles the execution of the Snakemake workflows:
 
 ```bash
-pixi run snakemake ...
+pixi run snakemake --cores 4 --use-conda --conda-prefix /mmfs1/gscratch/stergachislab/mhsohny/Miniconda/envs/sigprofiler
 ```
-
-And if you want to run this Snakemake from another directory you can do so with:
-
-```bash
-pixi run --manifest-path /path/to/snakemake/pixi.toml snakemake ...
-```
-
-where you update `/path/to/snakemake/pixi.toml` to the path of the `pixi.toml` you cloned.
-
-And in place of `...` use all the normal Snakemake arguments for your workflow.
