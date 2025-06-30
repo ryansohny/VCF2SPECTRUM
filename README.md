@@ -1,10 +1,9 @@
+[![Actions Status](https://github.com/mrvollger/SmkTemplate/workflows/CI/badge.svg)](https://github.com/mrvollger/SmkTemplate/actions)
 # Make Mutation Spectrum from VCF file (SNV/Indels)
 Currently support SBS96, DBS78 and ID83 signatures.
 > Note:
 > SBS96 is based on VCF obtained from diploid genome alignment.
 > If your VCF is generated using haploid genome (e.g., hg38/CHM13-T2T) alignment, this will undercount homozygous alt alleles.
-
-[![Actions Status](https://github.com/mrvollger/SmkTemplate/workflows/CI/badge.svg)](https://github.com/mrvollger/SmkTemplate/actions)
 
 This is a Snakemake project template. The `Snakefile` is under `workflow`.
 

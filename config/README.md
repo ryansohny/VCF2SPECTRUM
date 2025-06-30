@@ -4,9 +4,9 @@ A description of every valid option in `config.yaml`.
 
 ```
 # If you're performing SBS96 signature analysis, sample name should have _SBS96 suffix.
+# If you're performing DBS78 signature analysis, sample name should have _DBS78 suffix.
 # If you're performing ID83 signature analysis, sample name should have _ID83 suffix.
-# I know. This is not ideal. But it works for the time being.
-# DBS78 soon to be updated.
+# I know. This is not ideal. But it works for the time being. Note again this is not for VCFs based on haploid genome alignment.
 
 samples:
   <your_sample_name_prefix>_SBS96:
