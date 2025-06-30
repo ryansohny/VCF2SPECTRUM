@@ -1,0 +1,26 @@
+# mhsohny
+# For SBS96 signatures, the suffix of the sample should be _SBS96 and for ID83 should be _ID83
+
+samples:
+  COLO829TB_BLCOV1_Shared_SBS96:
+    vcf: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/Improving_SomaticVariantCalling_through_DSA/Fiber-seq/VariantCalls_DeepVariant_1.6.1/Mutational_Spectrum/COLO829T_PassageB_DSA.deepvariant.PASS.snv.annot.shared.blcov1.vcf.gz"
+    signatures: ["SBS96"]
+  COLO829TB_BLCOV2_Shared_SBS96:
+    vcf: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/Improving_SomaticVariantCalling_through_DSA/Fiber-seq/VariantCalls_DeepVariant_1.6.1/Mutational_Spectrum/COLO829T_PassageB_DSA.deepvariant.PASS.snv.annot.shared.blcov2.vcf.gz"
+    signatures: ["SBS96"]
+  COLO829TB_BLCOV3_Shared_SBS96:
+    vcf: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/Improving_SomaticVariantCalling_through_DSA/Fiber-seq/VariantCalls_DeepVariant_1.6.1/Mutational_Spectrum/COLO829T_PassageB_DSA.deepvariant.PASS.snv.annot.shared.blcov3.vcf.gz"
+    signatures: ["SBS96"]
+  COLO829TB_BLCOV4_Shared_SBS96:
+    vcf: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/Improving_SomaticVariantCalling_through_DSA/Fiber-seq/VariantCalls_DeepVariant_1.6.1/Mutational_Spectrum/COLO829T_PassageB_DSA.deepvariant.PASS.snv.annot.shared.blcov4.vcf.gz"
+    signatures: ["SBS96"]
+
+
+reference_genome: "/mmfs1/gscratch/stergachislab/assemblies/DSA_COLO829BL_v3.0.0.fasta"
+
+#signature_analysis:
+#  contexts: ["SBS96", "DBS78", "ID83"]
+#  method: "SigProfilerExtractor"
+#  min_mutations: 50
+
+output_dir: "results"

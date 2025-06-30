@@ -129,6 +129,29 @@ rule process_id83:
         "../scripts/process_id83.py"
 
 
+def find_sample_key_for_dbs78(wildcards):
+    """Find the sample key that corresponds to this base sample and has DBS78"""
+    for sample_key, sample_config in config["samples"].items():
+        if (get_base_sample_name_rule(sample_key) == wildcards.sample_base and 
+            "DBS78" in sample_config.get("signatures", [])):
+            return config["samples"][sample_key]["vcf"]
+    return "dummy.vcf"
+
+rule process_dbs78:
+    input:
+        vcf=find_sample_key_for_dbs78
+    output:
+        matrix="{output_dir}/{sample_base}_DBS78/{sample_base}.DBS78.all",
+        plot="{output_dir}/{sample_base}_DBS78/DBS_78_plots_{sample_base}.pdf",
+        plot_pct="{output_dir}/{sample_base}_DBS78/DBS_78_plots_{sample_base}.percentage.pdf"
+    params:
+        sample="{sample_base}",
+        output_dir="{output_dir}/{sample_base}_DBS78"
+    resources:
+        mem_mb=get_mem_mb
+    script:
+        "../scripts/process_dbs78.py"
+
 rule all_samples:
     input:
         expand("{output_dir}/{sample}/{sample}.SBS96.all",

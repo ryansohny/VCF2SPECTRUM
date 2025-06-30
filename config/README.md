@@ -6,7 +6,7 @@ A description of every valid option in `config.yaml`.
 # If you're performing SBS96 signature analysis, sample name should have _SBS96 suffix.
 # If you're performing ID83 signature analysis, sample name should have _ID83 suffix.
 # I know. This is not ideal. But it works for the time being.
-# DBS78 soon to be upgraded.
+# DBS78 soon to be updated.
 
 samples:
   <your_sample_name_prefix>_SBS96:

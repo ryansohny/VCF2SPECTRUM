@@ -3,8 +3,9 @@ from snakemake.utils import min_version
 min_version("8.0")
 
 
-configfile: "config/config.yaml"
-
+#configfile: "config/config.yaml"
+if not config:
+    configfile: "config/config.yaml"
 
 include: "rules/common.smk"
 include: "rules/vcf2spectrum.smk"
@@ -12,7 +13,6 @@ include: "rules/vcf2spectrum.smk"
 
 def get_base_sample_name(sample_key):
     """Extract base sample name from sample key (removes signature suffixes)"""
-    # Remove common signature suffixes
     for suffix in ['_SBS96', '_ID83', '_DBS78']:
         if sample_key.endswith(suffix):
             return sample_key[:-len(suffix)]
@@ -37,6 +37,12 @@ def get_all_outputs():
                     f"{output_dir}/{base_sample}_ID83/{base_sample}.ID83.all",
                     f"{output_dir}/{base_sample}_ID83/ID_83_plots_{base_sample}.pdf",
                     f"{output_dir}/{base_sample}_ID83/ID_83_plots_{base_sample}.percentage.pdf"
+                ])
+            elif sig == "DBS78":
+                outputs.extend([
+                    f"{output_dir}/{base_sample}_DBS78/{base_sample}.DBS78.all",
+                    f"{output_dir}/{base_sample}_DBS78/DBS_78_plots_{base_sample}.pdf",
+                    f"{output_dir}/{base_sample}_DBS78/DBS_78_plots_{base_sample}.percentage.pdf"
                 ])
     return outputs
 
