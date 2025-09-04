@@ -32,6 +32,20 @@ def get_all_outputs():
                     f"{output_dir}/{base_sample}_SBS96/SBS_96_plots_{base_sample}.pdf",
                     f"{output_dir}/{base_sample}_SBS96/SBS_96_plots_{base_sample}.percentage.pdf"
                 ])
+                # Add k-mer corrected outputs if kmer parameter is present
+                if "kmer" in sample_config:
+                    outputs.extend([
+                        f"{output_dir}/{base_sample}_SBS96/Kmer_corrected/{base_sample}.SBS96.kmer_corrected.all",
+                        f"{output_dir}/{base_sample}_SBS96/Kmer_corrected/SBS_96_plots_{base_sample}.kmer_corrected.pdf",
+                        f"{output_dir}/{base_sample}_SBS96/Kmer_corrected/SBS_96_plots_{base_sample}.kmer_corrected.percentage.pdf"
+                    ])
+                # Add k-mer normalized outputs if kmer_norm parameter is present
+                if "kmer_norm" in sample_config:
+                    outputs.extend([
+                        f"{output_dir}/{base_sample}_SBS96/Kmer_normalization/{base_sample}.SBS96.kmer_normalized.all",
+                        f"{output_dir}/{base_sample}_SBS96/Kmer_normalization/SBS_96_plots_{base_sample}.kmer_normalized.pdf",
+                        f"{output_dir}/{base_sample}_SBS96/Kmer_normalization/SBS_96_plots_{base_sample}.kmer_normalized.percentage.pdf"
+                    ])
             elif sig == "ID83":
                 outputs.extend([
                     f"{output_dir}/{base_sample}_ID83/{base_sample}.ID83.all",

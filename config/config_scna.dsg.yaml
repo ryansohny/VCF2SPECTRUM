@@ -1,0 +1,56 @@
+# mhsohny
+# For SBS96 signatures, the suffix of the sample should be _SBS96, for DBS78 should be _DBS78 and for ID83 should be _ID83
+
+samples:
+#  COLO829TB_Shared_Filtered_SBS96:
+#    vcf: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/Improving_SomaticVariantCalling_through_DSA/ReferenceSet/COLO829BL_DSA_v3.0.0/01.SNV/SCNA_Adjusted/COLO829T_PassageB_DSA.deepvariant.PASS.snv.annot.shared.scna.dsg.filtered.vcf.gz"
+#    signatures: ["SBS96"]
+#    kmer: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/DSA/Kmer_Analysis/DSA_COLO829BL_v3.0.0_Flagger-NucFlag_removed.fasta_3mers_canonical.txt"
+#  COLO829TB_Shared_Filtered_SINE_SBS96:
+#    vcf: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/Improving_SomaticVariantCalling_through_DSA/ReferenceSet/COLO829BL_DSA_v3.0.0/01.SNV/SCNA_Adjusted/COLO829T_PassageB_DSA.deepvariant.PASS.snv.annot.shared.scna.dsg.filtered.SINE.vcf.gz"
+#    signatures: ["SBS96"]
+#    kmer: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/DSA/Kmer_Analysis/RepeatMasker/Intersect_RM_WITH_DSA_COLO829BL_v3.0.0_Flagger-NucFlag_removed_sorted_SINE.fasta_3mers_canonical.txt"
+#  COLO829TB_Shared_Filtered_Simple_repeat_SBS96:
+#    vcf: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/Improving_SomaticVariantCalling_through_DSA/ReferenceSet/COLO829BL_DSA_v3.0.0/01.SNV/SCNA_Adjusted/COLO829T_PassageB_DSA.deepvariant.PASS.snv.annot.shared.scna.dsg.filtered.Simple_repeat.vcf.gz"
+#    signatures: ["SBS96"]
+#    kmer: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/DSA/Kmer_Analysis/RepeatMasker/Intersect_RM_WITH_DSA_COLO829BL_v3.0.0_Flagger-NucFlag_removed_sorted_Simple_repeat.fasta_3mers_canonical.txt"    
+  COLO829TB_Shared_Filtered_Satellite_SBS96:
+    vcf: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/Improving_SomaticVariantCalling_through_DSA/ReferenceSet/COLO829BL_DSA_v3.0.0/01.SNV/SCNA_Adjusted/COLO829T_PassageB_DSA.deepvariant.PASS.snv.annot.shared.scna.dsg.filtered.Satellite.vcf.gz"
+    signatures: ["SBS96"]
+    kmer: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/DSA/Kmer_Analysis/RepeatMasker/Intersect_RM_WITH_DSA_COLO829BL_v3.0.0_Flagger-NucFlag_removed_sorted_Satellite.fasta_3mers_canonical.txt"    
+#  COLO829TB_Shared_Filtered_Retroposon_SBS96:
+#    vcf: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/Improving_SomaticVariantCalling_through_DSA/ReferenceSet/COLO829BL_DSA_v3.0.0/01.SNV/SCNA_Adjusted/COLO829T_PassageB_DSA.deepvariant.PASS.snv.annot.shared.scna.dsg.filtered.Retroposon.vcf.gz"
+#    signatures: ["SBS96"]
+#    kmer: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/DSA/Kmer_Analysis/RepeatMasker/Intersect_RM_WITH_DSA_COLO829BL_v3.0.0_Flagger-NucFlag_removed_sorted_Retroposon.fasta_3mers_canonical.txt"    
+#  COLO829TB_Shared_Filtered_None_RE_SBS96:
+#    vcf: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/Improving_SomaticVariantCalling_through_DSA/ReferenceSet/COLO829BL_DSA_v3.0.0/01.SNV/SCNA_Adjusted/COLO829T_PassageB_DSA.deepvariant.PASS.snv.annot.shared.scna.dsg.filtered.None_RE.vcf.gz"
+#    signatures: ["SBS96"]
+#    kmer: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/DSA/Kmer_Analysis/RepeatMasker/DSA_COLO829BL_v3.0.0_Flagger-NucFlag_removed_None-RE.fasta_3mers_canonical.txt"    
+#  COLO829TB_Shared_Filtered_LTR_SBS96:
+#    vcf: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/Improving_SomaticVariantCalling_through_DSA/ReferenceSet/COLO829BL_DSA_v3.0.0/01.SNV/SCNA_Adjusted/COLO829T_PassageB_DSA.deepvariant.PASS.snv.annot.shared.scna.dsg.filtered.LTR.vcf.gz"
+#    signatures: ["SBS96"]
+#    kmer: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/DSA/Kmer_Analysis/RepeatMasker/Intersect_RM_WITH_DSA_COLO829BL_v3.0.0_Flagger-NucFlag_removed_sorted_LTR.fasta_3mers_canonical.txt"    
+#  COLO829TB_Shared_Filtered_Low_complexity_SBS96:
+#    vcf: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/Improving_SomaticVariantCalling_through_DSA/ReferenceSet/COLO829BL_DSA_v3.0.0/01.SNV/SCNA_Adjusted/COLO829T_PassageB_DSA.deepvariant.PASS.snv.annot.shared.scna.dsg.filtered.Low_complexity.vcf.gz"
+#    signatures: ["SBS96"]
+#    kmer: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/DSA/Kmer_Analysis/RepeatMasker/Intersect_RM_WITH_DSA_COLO829BL_v3.0.0_Flagger-NucFlag_removed_sorted_Low_complexity.fasta_3mers_canonical.txt"    
+#  COLO829TB_Shared_Filtered_LINE_SBS96:
+#    vcf: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/Improving_SomaticVariantCalling_through_DSA/ReferenceSet/COLO829BL_DSA_v3.0.0/01.SNV/SCNA_Adjusted/COLO829T_PassageB_DSA.deepvariant.PASS.snv.annot.shared.scna.dsg.filtered.LINE.vcf.gz"
+#    signatures: ["SBS96"]
+#    kmer: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/DSA/Kmer_Analysis/RepeatMasker/Intersect_RM_WITH_DSA_COLO829BL_v3.0.0_Flagger-NucFlag_removed_sorted_LINE.fasta_3mers_canonical.txt"    
+#  COLO829TB_Shared_Filtered_DNA_SBS96:
+#    vcf: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/Improving_SomaticVariantCalling_through_DSA/ReferenceSet/COLO829BL_DSA_v3.0.0/01.SNV/SCNA_Adjusted/COLO829T_PassageB_DSA.deepvariant.PASS.snv.annot.shared.scna.dsg.filtered.DNA.vcf.gz"
+#    signatures: ["SBS96"]
+#    kmer: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/DSA/Kmer_Analysis/RepeatMasker/Intersect_RM_WITH_DSA_COLO829BL_v3.0.0_Flagger-NucFlag_removed_sorted_DNA.fasta_3mers_canonical.txt"    
+#  COLO829TB_Shared_Filtered_DBS78:
+#    vcf: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/Improving_SomaticVariantCalling_through_DSA/ReferenceSet/COLO829BL_DSA_v3.0.0/01.SNV/SCNA_Adjusted/COLO829T_PassageB_DSA.deepvariant.PASS.snv.annot.shared.scna.dsg.filtered.dbs.vcf.gz"
+#    signatures: ["DBS78"]
+
+reference_genome: "/mmfs1/gscratch/stergachislab/assemblies/DSA_COLO829BL_v3.0.0.fasta"
+
+#signature_analysis:
+#  contexts: ["SBS96", "DBS78", "ID83"]
+#  method: "SigProfilerExtractor"
+#  min_mutations: 50
+
+output_dir: "results"

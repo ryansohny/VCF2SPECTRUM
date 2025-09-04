@@ -106,9 +106,17 @@ def main():
     # Install GRCh38 reference if needed
     try:
         genInstall.install('GRCh38')
-    except FileExistsError:
-        # Reference already installed
-        pass
+    except (FileExistsError, FileNotFoundError, OSError, PermissionError) as e:
+        # Reference already installed or concurrent installation issue
+        # Try to wait and retry once
+        import time
+        time.sleep(2)
+        try:
+            genInstall.install('GRCh38')
+        except Exception:
+            # If still fails, continue - reference might already be available
+            print(f"Warning: Reference installation issue (continuing): {e}")
+            pass
 
     os.makedirs(output_dir, exist_ok=True)
 

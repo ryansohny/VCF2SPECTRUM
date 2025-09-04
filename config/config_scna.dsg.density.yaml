@@ -1,0 +1,73 @@
+# mhsohny
+# For SBS96 signatures, the suffix of the sample should be _SBS96, for DBS78 should be _DBS78 and for ID83 should be _ID83
+
+samples:
+#  COLO829TB_Shared_Filtered_Pruned_SBS96:
+#    vcf: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/Improving_SomaticVariantCalling_through_DSA/ReferenceSet/COLO829BL_DSA_v3.0.0/01.SNV/SCNA_Adjusted/SNV_Density-based_Filtering/COLO829T_PassageB_DSA.deepvariant.PASS.snv.annot.shared.scna.dsg.density.filtered.vcf.gz"
+#    kmer_norm: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/DSA/Kmer_Analysis/RepeatMasker/kmer3_norm_factor_all.tsv"
+#    signatures: ["SBS96"]
+#  COLO829TB_Shared_Filtered_Pruned_None_RE_SBS96:
+#    vcf: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/Improving_SomaticVariantCalling_through_DSA/ReferenceSet/COLO829BL_DSA_v3.0.0/01.SNV/SCNA_Adjusted/SNV_Density-based_Filtering/COLO829T_PassageB_DSA.deepvariant.PASS.snv.annot.shared.scna.dsg.density.filtered.None_RE.vcf.gz"
+#    kmer_norm: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/DSA/Kmer_Analysis/RepeatMasker/kmer3_norm_factor_None_RE.tsv"
+#    signatures: ["SBS96"]
+#  COLO829TB_Shared_Filtered_Pruned_SINE_SBS96:
+#    vcf: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/Improving_SomaticVariantCalling_through_DSA/ReferenceSet/COLO829BL_DSA_v3.0.0/01.SNV/SCNA_Adjusted/SNV_Density-based_Filtering/COLO829T_PassageB_DSA.deepvariant.PASS.snv.annot.shared.scna.dsg.density.filtered.SINE.vcf.gz"
+#    kmer_norm: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/DSA/Kmer_Analysis/RepeatMasker/kmer3_norm_factor_SINE.tsv"
+#    signatures: ["SBS96"]
+#  COLO829TB_Shared_Filtered_Pruned_Simple_repeat_SBS96:
+#    vcf: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/Improving_SomaticVariantCalling_through_DSA/ReferenceSet/COLO829BL_DSA_v3.0.0/01.SNV/SCNA_Adjusted/SNV_Density-based_Filtering/COLO829T_PassageB_DSA.deepvariant.PASS.snv.annot.shared.scna.dsg.density.filtered.Simple_repeat.vcf.gz"
+#    kmer_norm: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/DSA/Kmer_Analysis/RepeatMasker/kmer3_norm_factor_Simple_repeat.tsv"
+#    signatures: ["SBS96"]
+#  COLO829TB_Shared_Filtered_Pruned_Satellite_SBS96:
+#    vcf: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/Improving_SomaticVariantCalling_through_DSA/ReferenceSet/COLO829BL_DSA_v3.0.0/01.SNV/SCNA_Adjusted/SNV_Density-based_Filtering/COLO829T_PassageB_DSA.deepvariant.PASS.snv.annot.shared.scna.dsg.density.filtered.Satellite.vcf.gz"
+#    kmer_norm: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/DSA/Kmer_Analysis/RepeatMasker/kmer3_norm_factor_Satellite.tsv"
+#    signatures: ["SBS96"]
+#  COLO829TB_Shared_Filtered_Pruned_Retroposon_SBS96:
+#    vcf: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/Improving_SomaticVariantCalling_through_DSA/ReferenceSet/COLO829BL_DSA_v3.0.0/01.SNV/SCNA_Adjusted/SNV_Density-based_Filtering/COLO829T_PassageB_DSA.deepvariant.PASS.snv.annot.shared.scna.dsg.density.filtered.Retroposon.vcf.gz"
+#    kmer_norm: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/DSA/Kmer_Analysis/RepeatMasker/kmer3_norm_factor_Retroposon.tsv"
+#    signatures: ["SBS96"]
+#  COLO829TB_Shared_Filtered_Pruned_LTR_SBS96:
+#    vcf: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/Improving_SomaticVariantCalling_through_DSA/ReferenceSet/COLO829BL_DSA_v3.0.0/01.SNV/SCNA_Adjusted/SNV_Density-based_Filtering/COLO829T_PassageB_DSA.deepvariant.PASS.snv.annot.shared.scna.dsg.density.filtered.LTR.vcf.gz"
+#    kmer_norm: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/DSA/Kmer_Analysis/RepeatMasker/kmer3_norm_factor_LTR.tsv"
+#    signatures: ["SBS96"]
+#  COLO829TB_Shared_Filtered_Pruned_Low_complexity_SBS96:
+#    vcf: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/Improving_SomaticVariantCalling_through_DSA/ReferenceSet/COLO829BL_DSA_v3.0.0/01.SNV/SCNA_Adjusted/SNV_Density-based_Filtering/COLO829T_PassageB_DSA.deepvariant.PASS.snv.annot.shared.scna.dsg.density.filtered.Low_complexity.vcf.gz"
+#    kmer_norm: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/DSA/Kmer_Analysis/RepeatMasker/kmer3_norm_factor_Low_complexity.tsv"
+#    signatures: ["SBS96"]
+#  COLO829TB_Shared_Filtered_Pruned_LINE_SBS96:
+#    vcf: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/Improving_SomaticVariantCalling_through_DSA/ReferenceSet/COLO829BL_DSA_v3.0.0/01.SNV/SCNA_Adjusted/SNV_Density-based_Filtering/COLO829T_PassageB_DSA.deepvariant.PASS.snv.annot.shared.scna.dsg.density.filtered.LINE.vcf.gz"
+#    kmer_norm: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/DSA/Kmer_Analysis/RepeatMasker/kmer3_norm_factor_LINE.tsv"
+#    signatures: ["SBS96"]
+#  COLO829TB_Shared_Filtered_Pruned_DNA_SBS96:
+#    vcf: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/Improving_SomaticVariantCalling_through_DSA/ReferenceSet/COLO829BL_DSA_v3.0.0/01.SNV/SCNA_Adjusted/SNV_Density-based_Filtering/COLO829T_PassageB_DSA.deepvariant.PASS.snv.annot.shared.scna.dsg.density.filtered.DNA.vcf.gz"
+#    kmer_norm: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/DSA/Kmer_Analysis/RepeatMasker/kmer3_norm_factor_DNA.tsv"
+#    signatures: ["SBS96"]
+#  COLO829TB_Shared_Filtered_Pruned_DBS78:
+#    vcf: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/Improving_SomaticVariantCalling_through_DSA/ReferenceSet/COLO829BL_DSA_v3.0.0/01.SNV/SCNA_Adjusted/SNV_Density-based_Filtering/COLO829T_PassageB_DSA.deepvariant.PASS.snv.annot.shared.scna.dsg.density.filtered.dbs.vcf.gz"
+#    signatures: ["DBS78"]
+  COLO829TB_Shared_Filtered_Pruned_CDR_BL_100kb_SBS96:
+    vcf: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/Improving_SomaticVariantCalling_through_DSA/ReferenceSet/COLO829BL_DSA_v3.0.0/01.SNV/SCNA_Adjusted/SNV_Density-based_Filtering/COLO829T_PassageB_DSA.deepvariant.PASS.snv.annot.shared.scna.dsg.density.filtered.CDR-BL_100kb.vcf.gz"
+    kmer_norm: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/DSA/Kmer_Analysis/RepeatMasker/kmer3_norm_factor_cdr_bl_100kb.tsv"
+    signatures: ["SBS96"]
+  COLO829TB_Shared_Filtered_Pruned_NON_CDR_BL_100kb_SBS96:
+    vcf: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/Improving_SomaticVariantCalling_through_DSA/ReferenceSet/COLO829BL_DSA_v3.0.0/01.SNV/SCNA_Adjusted/SNV_Density-based_Filtering/COLO829T_PassageB_DSA.deepvariant.PASS.snv.annot.shared.scna.dsg.density.filtered.Non-CDR-BL_100kb.vcf.gz"
+    kmer_norm: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/DSA/Kmer_Analysis/RepeatMasker/kmer3_norm_factor_non_cdr_bl_100kb.tsv"
+    signatures: ["SBS96"]
+
+  COLO829TB_Shared_Filtered_Pruned_CDR_BL_100kb_SBS96:
+    vcf: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/Improving_SomaticVariantCalling_through_DSA/ReferenceSet/COLO829BL_DSA_v3.0.0/01.SNV/SCNA_Adjusted/SNV_Density-based_Filtering/COLO829T_PassageB_DSA.deepvariant.PASS.snv.annot.shared.scna.dsg.density.filtered.CDR-BL_100kb.vcf.gz"
+    kmer_norm: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/DSA/Kmer_Analysis/RepeatMasker/kmer3_norm_factor_cdr_bl_100kb.tsv"
+    signatures: ["SBS96"]
+  COLO829TB_Shared_Filtered_Pruned_NON_CDR_BL_100kb_SBS96:
+    vcf: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/Improving_SomaticVariantCalling_through_DSA/ReferenceSet/COLO829BL_DSA_v3.0.0/01.SNV/SCNA_Adjusted/SNV_Density-based_Filtering/COLO829T_PassageB_DSA.deepvariant.PASS.snv.annot.shared.scna.dsg.density.filtered.Non-CDR-BL_100kb.vcf.gz"
+    kmer_norm: "/mmfs1/gscratch/stergachislab/mhsohny/SMaHT/DSA/Kmer_Analysis/RepeatMasker/kmer3_norm_factor_non_cdr_bl_100kb.tsv"
+    signatures: ["SBS96"]
+
+reference_genome: "/mmfs1/gscratch/stergachislab/assemblies/DSA_COLO829BL_v3.0.0.fasta"
+
+#signature_analysis:
+#  contexts: ["SBS96", "DBS78", "ID83"]
+#  method: "SigProfilerExtractor"
+#  min_mutations: 50
+
+output_dir: "results"

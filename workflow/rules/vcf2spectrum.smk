@@ -152,6 +152,86 @@ rule process_dbs78:
     script:
         "../scripts/process_dbs78.py"
 
+
+def find_sample_key_for_kmer_correction(wildcards):
+    """Find the sample key that corresponds to this base sample and has both SBS96 and kmer"""
+    for sample_key, sample_config in config["samples"].items():
+        if (get_base_sample_name_rule(sample_key) == wildcards.sample_base and 
+            "SBS96" in sample_config.get("signatures", []) and
+            "kmer" in sample_config):
+            return {
+                "sbs96": f"{wildcards.output_dir}/{wildcards.sample_base}_SBS96/{wildcards.sample_base}.SBS96.all",
+                "kmer": sample_config["kmer"]
+            }
+    return {"sbs96": "dummy.SBS96.all", "kmer": "dummy.kmer"}
+
+rule kmer_correct_sbs96:
+    input:
+        unpack(find_sample_key_for_kmer_correction)
+    output:
+        corrected="{output_dir}/{sample_base}_SBS96/Kmer_corrected/{sample_base}.SBS96.kmer_corrected.all"
+    params:
+        sample="{sample_base}",
+        output_dir="{output_dir}/{sample_base}_SBS96/Kmer_corrected"
+    resources:
+        mem_mb=get_mem_mb
+    script:
+        "../scripts/kmer_correct_sbs96.py"
+
+rule process_kmer_corrected_sbs96:
+    input:
+        sbs96="{output_dir}/{sample_base}_SBS96/Kmer_corrected/{sample_base}.SBS96.kmer_corrected.all"
+    output:
+        plot="{output_dir}/{sample_base}_SBS96/Kmer_corrected/SBS_96_plots_{sample_base}.kmer_corrected.pdf",
+        plot_pct="{output_dir}/{sample_base}_SBS96/Kmer_corrected/SBS_96_plots_{sample_base}.kmer_corrected.percentage.pdf"
+    params:
+        sample="{sample_base}.kmer_corrected",
+        output_dir="{output_dir}/{sample_base}_SBS96/Kmer_corrected"
+    resources:
+        mem_mb=get_mem_mb
+    script:
+        "../scripts/process_kmer_corrected_sbs96.py"
+
+
+def find_sample_key_for_kmer_normalization(wildcards):
+    """Find the sample key that corresponds to this base sample and has both SBS96 and kmer_norm"""
+    for sample_key, sample_config in config["samples"].items():
+        if (get_base_sample_name_rule(sample_key) == wildcards.sample_base and 
+            "SBS96" in sample_config.get("signatures", []) and
+            "kmer_norm" in sample_config):
+            return {
+                "sbs96": f"{wildcards.output_dir}/{wildcards.sample_base}_SBS96/{wildcards.sample_base}.SBS96.all",
+                "kmer_norm": sample_config["kmer_norm"]
+            }
+    return {"sbs96": "dummy.SBS96.all", "kmer_norm": "dummy.kmer_norm"}
+
+rule kmer_normalize_sbs96:
+    input:
+        unpack(find_sample_key_for_kmer_normalization)
+    output:
+        normalized="{output_dir}/{sample_base}_SBS96/Kmer_normalization/{sample_base}.SBS96.kmer_normalized.all"
+    params:
+        sample="{sample_base}",
+        output_dir="{output_dir}/{sample_base}_SBS96/Kmer_normalization"
+    resources:
+        mem_mb=get_mem_mb
+    script:
+        "../scripts/kmer_normalize_sbs96.py"
+
+rule process_kmer_normalized_sbs96:
+    input:
+        sbs96="{output_dir}/{sample_base}_SBS96/Kmer_normalization/{sample_base}.SBS96.kmer_normalized.all"
+    output:
+        plot="{output_dir}/{sample_base}_SBS96/Kmer_normalization/SBS_96_plots_{sample_base}.kmer_normalized.pdf",
+        plot_pct="{output_dir}/{sample_base}_SBS96/Kmer_normalization/SBS_96_plots_{sample_base}.kmer_normalized.percentage.pdf"
+    params:
+        sample="{sample_base}.kmer_normalized",
+        output_dir="{output_dir}/{sample_base}_SBS96/Kmer_normalization"
+    resources:
+        mem_mb=get_mem_mb
+    script:
+        "../scripts/process_kmer_normalized_sbs96.py"
+
 rule all_samples:
     input:
         expand("{output_dir}/{sample}/{sample}.SBS96.all",
